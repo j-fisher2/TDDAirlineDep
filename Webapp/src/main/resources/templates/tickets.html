@@ -20,10 +20,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Retrieve selected flights from local storage
             var selectedFlights = JSON.parse(localStorage.getItem('selectedFlights'));
-    
-            // Send selected flights to the server
             $.ajax({
                 type: 'POST',
                 url: '/decrement-flights', // Replace with the appropriate URL for your server endpoint
@@ -43,7 +40,7 @@
                 var passengerName = localStorage.getItem('passengerName');
                 var passengerAge = localStorage.getItem('passengerAge');
                 var passengerLname = localStorage.getItem('passengerLname');
-                // Create card element
+               
                 var card = $('<div class="col-md-4"></div>');
                 card.append('<div class="card mt-4">' +
                                 '<div class="card-header">' +
