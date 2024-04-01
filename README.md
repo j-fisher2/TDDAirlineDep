@@ -6,4 +6,4 @@ Technologies Used:
 
     Backend: Java with Spring Boot
     Frontend: HTML, CSS, Thymeleaf, JavaScript
-    Other Tools: jQuery, Bootstrap, Docker
+    Other Tools: jQuery, Bootstrap, Docker, Jenkins
