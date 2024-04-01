@@ -66,9 +66,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <script>
-        // When the form is submitted
         $('#purchaseForm').submit(function(event) {
-            // Get all selected flight numbers and departing times
             var selectedFlights = [];
             $('input[name="selectedFlights"]:checked').each(function() {
                 var flightNumber = $(this).val();
@@ -78,8 +76,6 @@
             if (selectedFlights.length == 0) {
                 event.preventDefault();
             }
-
-            // Store selected flights in local storage
             localStorage.setItem('selectedFlights', JSON.stringify(selectedFlights));
         });
 
